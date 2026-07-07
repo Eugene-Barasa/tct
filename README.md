@@ -175,7 +175,6 @@ Run in <strong>PowerShell (Admin)</strong>
 
 ### Termux
 
-<pre><code>bash &lt;(curl -sL https://t-ct.org/dl/termux)</code></pre>
 
 <a href="https://t-ct.org/termux">Termux Guide</a>
 
