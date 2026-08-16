@@ -116,7 +116,7 @@ default_lock_system: &default_lock_system
   DELETE_WARN_AFTER: 3
 
 # ==============================================================================
-# BOTS CONFIGURATION (Maximum 5)
+# BOTS CONFIGURATION (Maxi(set prefix to "null" or "none" for no prefix
 # ==============================================================================
 BOTS:
 
