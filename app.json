@@ -15,7 +15,7 @@
   ],
   "env": {
     "SESSION_ID": {
-      "description": "Your WhatsApp session ID (REQUIRED)",
+      "description": "Your WhatsApp session ID(s). (REQUIRED). Use commas to separate multiple sessions (e.g., ID1,ID2)",
       "value": "",
       "required": true
     },

@@ -102,6 +102,37 @@ async function generateConfig() {
 
   let lines = content ? content.split("\n") : [];
 
+  const legacyKeys = ["SESSION_ID", "PREFIX", "TIMEZONE", "OPENWEATHER_API_KEY", "MISTRAL_API_KEY"];
+  lines = lines.filter(line => !legacyKeys.some(k => new RegExp(`^${k}\\s*:`, "i").test(line)));
+
+  const botsIndex = lines.findIndex(line => /^BOTS\s*:/i.test(line));
+  if (botsIndex !== -1) {
+    let endIndex = botsIndex + 1;
+    while (endIndex < lines.length && (lines[endIndex].trim() === "" || lines[endIndex].startsWith(" ") || lines[endIndex].startsWith("-"))) {
+      endIndex++;
+    }
+    lines.splice(botsIndex, endIndex - botsIndex);
+  }
+
+  if (process.env.SESSION_ID) {
+    lines.push("");
+    lines.push("BOTS:");
+    const sessions = process.env.SESSION_ID.split(",");
+    
+    for (const s of sessions) {
+      const trimmed = s.trim();
+      if (trimmed) {
+        // Core ID
+        lines.push(`  - SESSION_ID: "${trimmed}"`);
+        
+        if (process.env.PREFIX) lines.push(`    PREFIX: "${process.env.PREFIX}"`);
+        if (process.env.TIMEZONE) lines.push(`    TIMEZONE: "${process.env.TIMEZONE}"`);
+        if (process.env.OPENWEATHER_API_KEY) lines.push(`    OPENWEATHER_API_KEY: "${process.env.OPENWEATHER_API_KEY}"`);
+        if (process.env.MISTRAL_API_KEY) lines.push(`    MISTRAL_API_KEY: "${process.env.MISTRAL_API_KEY}"`);
+      }
+    }
+  }
+
   const forceOverrideEnvVars = (key, value) => {
     if (value === undefined || value === null || value === "") return;
 
@@ -123,13 +154,6 @@ async function generateConfig() {
     }
   };
 
-  // Standard Variables
-  forceOverrideEnvVars("SESSION_ID", process.env.SESSION_ID);
-  forceOverrideEnvVars("PREFIX", process.env.PREFIX);
-  forceOverrideEnvVars("TIMEZONE", process.env.TIMEZONE);
-  forceOverrideEnvVars("OPENWEATHER_API_KEY", process.env.OPENWEATHER_API_KEY);
-  
-  // Postgres Cloud Sync Variables
   forceOverrideEnvVars("POSTGRES_URL", process.env.POSTGRES_URL);
   forceOverrideEnvVars("POSTGRES_SYNC_INTERVAL", process.env.POSTGRES_SYNC_INTERVAL);
 
