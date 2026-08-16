@@ -8,6 +8,8 @@ logs/
 
 *.zip
 *.exe
+*.apk
+*.save
 
 tct-linux
 *arm*
