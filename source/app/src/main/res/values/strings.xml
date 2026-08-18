@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TCT</string>
+    <string name="bot_title">TCT Bot Controller</string>
+    <string name="session_hint">Enter Session ID...</string>
+    <string name="prefix_hint">Bot Prefix (e.g. . or !)</string>
+    <string name="start_bot">Start Bot</string>
+    <string name="stop_bot">Stop Bot</string>
+    <string name="status_stopped">Status: Stopped</string>
+    <string name="status_running">Status: Running (Network Smart Mode)</string>
+    <string name="save_config">Save Configuration</string>
+</resources>
