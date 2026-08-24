@@ -1,3 +1,4 @@
+```md
 <div align="center">
 
 # <img src="https://t-ct.org/media/tct.png" alt="TCT Logo" width="80" />
@@ -5,6 +6,7 @@
 [![Telegram](https://img.shields.io/badge/Telegram-Join-blue?style=for-the-badge&logo=telegram)](https://t.me/TheCarlTech)
 [![WhatsApp Channel](https://img.shields.io/badge/WhatsApp-Channel-green?style=for-the-badge&logo=whatsapp)](https://whatsapp.com/channel/0029VbCTviw8qIzlACm6Cy0t)
 [![GitHub version](https://img.shields.io/github/v/release/i-tct/tct?label=Latest%20Release&style=for-the-badge)](https://github.com/i-tct/tct/releases/latest)
+[![Donate](https://img.shields.io/badge/Donate-Support%20TCT-red?style=for-the-badge&logo=heart)](https://t-ct.org/donate/)
 
 <p><strong>A Fast WA Bot Built with Go</strong></p>
 
@@ -140,11 +142,17 @@ Before deploying, link your WA account.
 
 ## Deployment Options
 
-### Linux / Ubuntu / VPS
+### Linux / Debian / Ubuntu / VPS
 
 <pre><code>bash &lt;(curl -sL https://t-ct.org/dl/vps)</code></pre>
 
 <a href="https://t-ct.org/vps/">VPS Guide</a>
+
+#### TCT Process Manager
+
+For Debian and Ubuntu VPS installations:
+
+<a href="https://t-ct.org/docs/tct-pm">TCT Process Manager Documentation</a>
 
 ---
 
@@ -198,7 +206,8 @@ Run in <strong>PowerShell (Admin)</strong>
 
 <a href="https://t-ct.org/panel/">Web Panel</a> ·
 <a href="https://t-ct.org/dl/tct-windows.zip">Windows Zip</a> ·
-<a href="https://play.google.com/store/apps/details?id=com.tct.bot">TCTApp</a>
+<a href="https://play.google.com/store/apps/details?id=com.tct.bot">TCTApp</a> ·
+<a href="https://t-ct.org/docs/tct-pm">TCT Process Manager</a>
 
 ### Deployment Guides
 
@@ -233,6 +242,18 @@ Run in <strong>PowerShell (Admin)</strong>
 
 <div align="center">
 
+## ❤️ Support TCT
+
+If TCT is useful to you and you'd like to support its development:
+
+<a href="https://t-ct.org/donate/">Donate to TCT</a>
+
+</div>
+
+---
+
+<div align="center">
+
 ## ⭐ TCT
 
 If you like **TCT**, consider starring the repository on GitHub.
@@ -240,3 +261,4 @@ If you like **TCT**, consider starring the repository on GitHub.
 <a href="LICENSE">See LICENSE</a>
 
 </div>
+```
