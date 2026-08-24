@@ -1,4 +1,3 @@
-```md
 <div align="center">
 
 # <img src="https://t-ct.org/media/tct.png" alt="TCT Logo" width="80" />
@@ -261,4 +260,3 @@ If you like **TCT**, consider starring the repository on GitHub.
 <a href="LICENSE">See LICENSE</a>
 
 </div>
-```
