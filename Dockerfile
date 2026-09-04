@@ -1,1 +1,0 @@
-FROM tctbot/tctbot:latest
