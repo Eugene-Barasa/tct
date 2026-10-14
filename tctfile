@@ -83,12 +83,12 @@ BOTS:
     LOCK_SYSTEM: *default_lock_system
 
   # ========================================
-  # BOT 2: Secondary (DISABLED)
+  # BOT 2: Secondary (ACTIVE)
   # ========================================
-  # - SESSION_ID: "tct_2_secondary"
+  # - SESSION_ID: "tct_8346b67"
   #   TIMEZONE: "Africa/Nairobi"
   #   PREFIX: "."
-  #   OPENWEATHER_API_KEY: "key_2"
+  #   
   #   ALIVE_IMAGES: *default_alive_images
   #   WELCOME_IMAGES: *default_welcome_images
   #   LOCK_SYSTEM: *default_lock_system
